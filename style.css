@@ -13,11 +13,10 @@ body{
 hr{ 
 	border: none; /* Remove bordas padrão */
         height: 3rem; /* Altura da linha */
-        background-color: black;
+        background-color:#0B0D10 ;
 	margin-top:0.2%;
 	width:100%;
 	position:absolute;
-	
 }
 header{
 	position:fixed;
@@ -26,10 +25,12 @@ header{
 	flex-direction:row;
 	align-items:center;
 	justify-content:space-around;
+	z-index:1;
+	background-color:black;
 }
 #logo{
-	width:15%;
-	margin:2rem;
+	width:12%;
+	margin:1rem;
 	z-index:1;
 }
 ul{
@@ -37,7 +38,7 @@ ul{
 	margin-right:5rem ;
 	display:flex;
 	flex-direction:row;
-	font-size:1.5rem;
+	font-size:1.3rem;
 	width:50rem;
 }
 li{
@@ -47,10 +48,18 @@ li{
 	font-family:'Open Sans' ;
 	z-index:1;
 }
+
 a{
 	text-decoration:none;
 	color:#fff;
 }
+a:hover{
+	color:#FFEEE5;
+}
+a:active{
+	color:#CDB2A5;
+}
+
 #container{
 	display:flex;
 	flex-direction:row;
@@ -83,16 +92,18 @@ p{
 }
 h2{
 	text-align:center;
-	margin:5rem;
 	font-size:2rem;
 	color:#C61912;
 	font-family:'league Spartan';
+	margin-top:2rem;
 }
 #section_quemsomos{
 	overflow-wrap:break word; /*quebra palavras longas*/
 	font-family:'league Spartan';
+	padding-top:10rem;
 }
 #section_quemsomos pre{
+	font-family:'Open Sans';
 	color:#fff;
 	font-size:1.2rem;
 	width:70%;
@@ -107,6 +118,7 @@ h2{
 	display:flex;
 	flex-direction:column;
 	margin:auto;
+	padding:10rem 0; 
 }
 .item_serviço{
 	width:70%;
@@ -133,22 +145,144 @@ h2{
 	
 }
 .nome_serviço{
-	font-size:1.2rem;
-}
-.nome_serviço{
 	font-family:'league Spartan';
-	font-size:1.8rem;
+	font-size:1.5rem;
 }
 .descricao_serviço{
 	font-family:'Questrial';
-	font-size:1.3rem;
+	font-size:1.2rem;
 	width:85%;
 	
 }
 .preco_serviço{
 	background-color:#0811E9;
 	width:20%;
-	text-align:center;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:1.2rem;
+	width:15%;
+}
+.linhatitulo{
+	
+	background-color:#C61912;
+	border: none; /* Remove bordas padrão */
+        height: 0.1rem; /* Altura da linha */
+	margin-top:1.2%;
+	width:20%;
+
+}
+.botao{
+	display:flex;
+	flex-direction:row;
+	gap:1rem;
+	
+}
+.botao_agendar_serviços{
+	background-color:#C61912;
+	color:#fff;
+	padding:0.4rem;
+	border:none;	
+	width:15%;
+	font-weight:bold;
+	cursor:pointer;	
+}
+.botao_agendar_serviços:hover{
+	background-color:#F73831;
+}
+.botao_agendar_serviços:active{
+	background-color:#CC504B;
 }
 
+footer{
+	background-color:#0B0D10;
+	color:#fff;
+	display:flex;
+	flex-direction:column;
+	height:10rem;
+	width:100%;
+	align-items:center;
+	padding:4rem 0;
+	font-family:'Open Sans';
+	gap:1rem;
+}
 
+footer p{
+	width:100%;
+	font-size:1.1rem;
+}
+
+#container_footer{
+	display:flex;
+	flex-direction:row;
+	width:40%;
+	margin:auto;
+	align-items:center;
+	gap:1rem;
+
+}
+#container_logo_footer{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	width:50%;
+	text-align:center;
+}
+#logo_footer{
+	width:60%;
+	
+}
+#contatos_sociais{
+	display:flex;
+	flex-direction:column;
+	gap:0.5rem;
+	margin:auto;
+	width:50%;
+	
+
+}
+
+#container_whats{
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	align-items:center;
+}
+#container_whats a{
+	width:60%;
+	
+}
+#container_whats p{
+	width:25%;
+}
+#container_sociais{
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	align-items:center;
+	gap:0.5rem;
+	
+	
+}
+#container_sociais a{
+	margin:0;
+	padding:0;
+	gap:0;
+	width:8%;
+	gap:0.5rem;	
+}
+
+.icon_sociais{
+	width:100%;
+	
+	
+}
+.icon_sociais:hover{
+	width:110%;	
+}
+
+#copy{
+	text-align:center;
+	font-size:0.8rem;
+	padding-bottom:1rem;
+}
