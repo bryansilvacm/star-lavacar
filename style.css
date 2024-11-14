@@ -55,6 +55,7 @@ a{
 }
 a:hover{
 	color:#FFEEE5;
+	font-size:90%;
 }
 a:active{
 	color:#CDB2A5;
@@ -192,6 +193,28 @@ h2{
 }
 .botao_agendar_serviços:active{
 	background-color:#CC504B;
+}
+
+#section_agendamento{
+	width:60%;
+	margin:3rem auto;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	background-color:#0B0D10;
+		
+}
+.whats_agendamento{
+	margin:auto;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	font-size:1.1rem;
+	width:30%;
+	color:white;
+	padding:2rem 0;
 }
 
 footer{
