@@ -66,12 +66,20 @@ a:active{
 	flex-direction:row;
 	width:100%;
 }
+main{
+	width:50%;
+}
+aside{
+	width:50%;
+}
+
 #fundocarro{
-	height:90%;
+	height:100%;
+	width:100%;
 	}
 #fundolavagem{
 	height:100%;
-	width:90%;
+	width:100%;
 }
 
 #text{
