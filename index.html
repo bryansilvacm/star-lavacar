@@ -11,6 +11,8 @@
 <header>
 <hr>
 <img src="https://github.com/bryansilvacm/star-lavacar/blob/main/logo.png?raw=true" id="logo">
+
+<section class="menu-normal">
 <nav>
 	<ul>
 		<li> <a href="#section_quemsomos"> Quem somos?</a></li>
@@ -19,6 +21,25 @@
 		<li> <a href="#footer/contatos"> Contatos </a></li>
 	</ul>
 </nav>
+</section>
+<!--hambuger menu-->
+<section class="menuHamburguer">
+ <!-- Ícone do Menu Sanduíche -->
+  <div class="menu-icon">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+	 <!-- Menu -->
+  <nav class="nav-menu" id="nav-menu">
+    <ul>
+      <li><a href="#section_quemsomos">-Quem somos?</a></li>
+      <li><a href="#section_serviços">-Serviços</a></li>
+      <li><a href="#section_agendamento">-Agendamento</a></li>
+      <li><a href="#footer/contatos">-Contatos</a></li>
+    </ul>
+  </nav>
+</section>
+
 </header> 
 <section id="container">
 <main>
@@ -198,5 +219,14 @@ No Star Lavacar, seu carro brilha como uma estrela! Experimente nossos serviços
 
 	<p id="copy">&copy; 2024 VS DEV SOLUTIONS - Bryan Silva. Todos os direitos reservados</p>	
 	</footer>
+<script>
+const menuHamburguer = document.querySelector('.menuHamburguer');
+const navMenu = document.querySelector('.nav-menu');
+
+menuHamburguer.addEventListener('click', () => {
+  navMenu.style.display = navMenu.style.display === 'block' ? 'none' : 'block';
+});
+
+</script>
  </body>
 </html>
