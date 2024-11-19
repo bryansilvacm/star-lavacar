@@ -75,6 +75,7 @@ a:active {
   top: 40%; /* Posição do ícone */
   left:80%;
   width: 35%;
+  z-index:10;
 }
 
 .menu-icon {
