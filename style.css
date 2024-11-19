@@ -21,7 +21,7 @@ hr {
 }
 
 header {
-   position: fixed;
+  position: fixed;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -35,7 +35,7 @@ header {
   width: 12%;
   margin-left: 6rem;
   z-index: 1;
-  padding:1rem;
+  padding: 1rem;
 }
 
 ul {
@@ -70,11 +70,12 @@ a:active {
 }
 
 .menuHamburguer {
-  display: none; /* Exibe o ícone do hambúrguer */
+  display: none; /* Exibe o ícone do hambúrguer apenas em telas pequenas */
   position: absolute;
-  top: 40%; /* Posição do ícone */
-  left:80%;
+  top: 25%; /* Ajuste para centralizar melhor o ícone */
+  left: 80%;
   width: 35%;
+  z-index: 2;
 }
 
 .menu-icon {
@@ -105,7 +106,7 @@ a:active {
   padding-top: 50px;
   color: white;
   box-shadow: 0.5px 0.5px 10px #C61912;
-  margin-left:20%;
+  margin-left: 20%;
 }
 
 .nav-menu ul {
@@ -121,7 +122,7 @@ a:active {
   margin-left: 2rem;
   width: 100%;
   color: white;
-  font-size:80%;
+  font-size: 80%;
 }
 
 .nav-menu a {
@@ -129,10 +130,11 @@ a:active {
   transition: color 0.3s;
 }
 
-.nav-menu a:hover{
-  color:#ddd;
+.nav-menu a:hover {
+  color: #ddd;
 }
 
+/* Contêiner principal */
 #container {
   display: flex;
   flex-direction: row;
@@ -158,7 +160,7 @@ h1 {
   font-size: 5rem;
   font-family: 'League Spartan';
   color: #C61912;
-  width:50%;
+  width: 50%;
 }
 
 p {
@@ -229,6 +231,9 @@ h2 {
 .nome_serviço {
   font-family: 'League Spartan';
   font-size: 1.5rem;
+  text-decoration: underline;
+  text-decoration-color: #C61912; /* Cor do sublinhado */
+  text-decoration-thickness: 3px; /* Espessura do sublinhado */
 }
 
 .descricao_serviço {
@@ -397,114 +402,199 @@ footer p {
   padding-bottom: 1rem;
 }
 
-/* Entre 1365 e 2014 - ok */
-
 /* Smartphones pequenos */
 @media (max-width: 500px) {
   .menu-normal {
     display: none; /* Oculta o menu de navegação normal */
   }
-.menuHamburguer {
-    display:flex;
-}
-#logo{
-    width:30%;
-    margin-left:2%;	
-}
-header{
-	align-items:center;
-}
 
-#container {
-  min-height: 300px;
-}
+  .menuHamburguer {
+    display: flex; /* Torna o menu hamburguer visível */
+  }
 
-#text {
-  margin: 30% 6%;
-}
+  #logo {
+    width: 30%;
+    margin-left: 2%;
+  }
 
-h1 {
-  font-size:2rem;
-}
+  header {
+    align-items: center;
+  }
 
-p {
-  font-size: 1rem;
-  width: 100%;
+  #container {
+    min-height: 300px;
+  }
+
+  #text {
+    margin: 30% 6%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  #section_quemsomos pre {
+    font-size: 1rem;
+    width: 70%;
+  }
+
+  #section_quemsomos, #section_serviços, #section_agendamento {
+    padding-top: 3rem;
+    padding-bottom: 0;
+  }
+
+  .item_serviço {
+    width: 90%;
+    gap: 2rem;
+    margin: 1rem auto;
+  }
+
+  .container_textos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin: 2rem auto;
+  }
+
+  .img_item_serviço {
+    margin: 0;
+    width: 40%;
+  }
+
+  .foto_item_serviço {
+    width: 100%;
+  }
+
+  .nome_serviço {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    text-decoration-color: #C61912;
+    text-decoration-thickness: 3px;
+  }
+
+  .descricao_serviço {
+    font-size: 1rem;
+    width: 80%;
+  }
+
+  .preco_serviço {
+    font-size: 1rem;
+    width: 50%;
+  }
+
+  .linhatitulo {
+    display: none;
+  }
+
+  .botao_agendar_serviços {
+    width: 50%;
+  }
+
+  #section_agendamento {
+    width: 90%;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+  }
+
+  #section_agendamento h2 {
+    font-size: 1.5rem;
+    width: 60%;
+  }
+
+  #section_agendamento p {
+    font-size: 1rem;
+    width: 30%;
+    text-align: center;
+  }
+
+  #section_agendamento a {
+    font-size: 1rem;
+    width: 70%;
+  }
+
+  footer {
+    height: auto;
+    width: 100%;
+    padding: 4rem 0 0 0;
+    text-align:center;
+font-size: 0.8rem;
+
+  }
+footer p{
+	font-size: 0.8rem;
 }
-#section_quemsomos pre {
-  font-size: 1rem;
-  width: 70%;
-}
-#section_quemsomos, #section_serviços {
-  padding-top:3rem;
-}
+  #container_footer {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+	    
+  }
+
+  #container_logo_footer {
+    width: 90%;
+  }
+
+  #logo_footer {
+    width: 50%;
+  }
+
+  #contatos_sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  #container_whats {
+    width: 90%;
+	justify-content:space-arround;
+	margin:auto;
+    gap:0;
+	
+  }
+  #container_sociais {
+    flex-direction: row;
+    width: 30%;
+    align-items: center;
+    gap: 0.5rem;
+
+  }
+
+  #container_sociais a {
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    width: 100%;
+    gap: 0.5rem;
 
 
-.item_serviço {
-  width:90%;
-  gap:2rem;
-  margin:1rem auto;
-}
+  }
 
-.container_textos {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap:0.7rem;
-  margin:2rem auto;
-}
+  .icon_sociais {
+    width: 100%;
+    
+  }
 
-.img_item_serviço {
-  margin:0;
-  width: 40%;
-}
+  .icon_sociais:hover {
+    width: 110%;
+  }
 
-.foto_item_serviço {
-  width: 100%;
-}
-
-.nome_serviço {
-  font-size: 1.2rem;
-}
-
-.descricao_serviço {
-  font-size: 1rem;
-  width: 80%;
-}
-
-.preco_serviço {
-  font-size: 1rem;
-  width: 50%;
-}
-
-.linhatitulo {
-  margin-top: 65%;
-  width: 50%;
-}
-
-.botao {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
-
-.botao_agendar_serviços {
-  background-color: #C61912;
-  color: #fff;
-  padding: 0.4rem;
-  border: none;
-  width: 25%;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.botao_agendar_serviços:hover {
-  background-color: #F73831;
-}
-
-.botao_agendar_serviços:active {
-  background-color: #CC504B;
-}
-
-
+  #copy {
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 1rem;
+  }
 }
