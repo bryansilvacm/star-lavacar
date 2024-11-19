@@ -75,7 +75,6 @@ a:active {
   top: 40%; /* Posição do ícone */
   left:80%;
   width: 35%;
-  z-index:10;
 }
 
 .menu-icon {
@@ -417,20 +416,20 @@ header{
 }
 
 #container {
-  min-height: 350px;
+  min-height: 300px;
 }
 
 #text {
-  margin: 30% 5%;
+  margin: 30% 6%;
 }
 
 h1 {
-  font-size:2.5rem;
+  font-size:2rem;
 }
 
 p {
   font-size: 1rem;
-  width: 90%;
+  width: 100%;
 }
 #section_quemsomos pre {
   font-size: 1rem;
@@ -439,5 +438,73 @@ p {
 #section_quemsomos, #section_serviços {
   padding-top:3rem;
 }
+
+
+.item_serviço {
+  width:90%;
+  gap:2rem;
+  margin:1rem auto;
+}
+
+.container_textos {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap:0.7rem;
+  margin:2rem auto;
+}
+
+.img_item_serviço {
+  margin:0;
+  width: 40%;
+}
+
+.foto_item_serviço {
+  width: 100%;
+}
+
+.nome_serviço {
+  font-size: 1.2rem;
+}
+
+.descricao_serviço {
+  font-size: 1rem;
+  width: 80%;
+}
+
+.preco_serviço {
+  font-size: 1rem;
+  width: 50%;
+}
+
+.linhatitulo {
+  margin-top: 65%;
+  width: 50%;
+}
+
+.botao {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.botao_agendar_serviços {
+  background-color: #C61912;
+  color: #fff;
+  padding: 0.4rem;
+  border: none;
+  width: 25%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.botao_agendar_serviços:hover {
+  background-color: #F73831;
+}
+
+.botao_agendar_serviços:active {
+  background-color: #CC504B;
+}
+
 
 }
