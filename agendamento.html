@@ -4,23 +4,87 @@
     <meta charset="UTF-8" />
     <title>STAR LAVACAR</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-     <link rel="stylesheet" href="C:\Users\Caixa\Downloads\here\lavacar\style.css">
+     <link rel="stylesheet" href="style_agendamento.css">
   </head>
-  <body>
+
+<body>
 
 <header>
 <hr>
 <img src="C:\Users\Caixa\Downloads\here\lavacar\logo.png" id="logo">
 <nav>
 	<ul>
-		<li> <a href="#section_quemsomos"> Quem somos?</a></li>
-		<li> <a href="#section_serviços"> Serviços </a></li>
-		<li> <a href="#section_agendamento">Agendamento</a></li>
-		<li> <a href="#footer/contatos"> Contatos </a></li>
+		<li> <a href="index.html#section_quemsomos"> Quem somos?</a></li>
+		<li> <a href="index.html#section_serviços"> Serviços </a></li>
+		<li> <a href="#index.htmlsection_agendamento">Agendamento</a></li>
+		<li> <a href="index.html#footer/contatos"> Contatos </a></li>
 	</ul>
 </nav>
 </header> 
-<body>
 
+<section class="formulario">
+<form>
+<div class="info_pessoais">
+<label class="nome">Nome: </label>
+<input type="text" name="nome" id="nome">
+
+<label class="nome">Telefone: </label>
+<input type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000">
+
+
+</div>
+<div class="info_carro">
+<label class="placa">Placa: </label>
+<input type="text" name="placa" id="placa">
+
+<label class="modelo">Modelo: </label>
+<input type="texto" name="modelo" id="modelo">
+
+
+</div>
+<div class="section_serviços">
+<h2>Serviços</h2>
+
+<div class="colunas">
+<div class="servicos_coluna2">
+
+<div class="opcoes">
+<input type="checkbox" id="lavagem_simples" name="lavagem_simples" />
+<label for="lavagem_simples">Lavagem Simples</label>
+</div>
+
+<div class="opcoes">
+<input type="checkbox" id="lavagem_completa" name="lavagem_completa" />
+<label for="lavagem_completa">Lavagem Completa</label>
+</div>
+
+<div class="opcoes">
+<input type="checkbox" id="higienização_interna" name="higienização_interna" />
+<label for="higienização_interna">Higienização Interna</label>
+</div>
+
+</div>
+
+<div class="servicos_coluna2">
+<div class="opcoes">
+<input type="checkbox" id="polimento_enceramento" name="polimento_enceramento" />
+<label for="polimento_enceramento">Polimento e Enceramento</label>
+</div>
+
+<div class="opcoes">
+<input type="checkbox" id="lavagem_seco" name="lavagem_seco" />
+<label for="lavagem_seco">Lavagem a Seco</label>
+</div>
+
+<div class="opcoes">
+<input type="checkbox" id="limpeza_motor" name="limpeza_motor" />
+<label for="limpeza_motor">Limpeza de Motor</label>
+</div>
+</div>
+
+</div>
+</div>
+</form>
+</section>
 </body>
 </html>
