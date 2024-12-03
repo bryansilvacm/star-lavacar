@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Questrial&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color:#272729;
+	height:100%;
+}
+hr{ 
+	border: none; /* Remove bordas padrão */
+        height: 3rem; /* Altura da linha */
+        background-color:#0B0D10 ;
+	margin-top:0.2%;
+	width:100%;
+	position:absolute;
+}
+header{
+	position:fixed;
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:space-around;
+	z-index:1;
+	background-color:black;
+}
+#logo{
+	width:12%;
+	margin:1rem;
+	z-index:1;
+}
+ul{
+	color:#fff;
+	margin-right:5rem ;
+	display:flex;
+	flex-direction:row;
+	font-size:1.3rem;
+	width:50rem;
+}
+li{
+	width:25%;
+	list-style:none;
+	text-align:center;
+	font-family:'Open Sans' ;
+	z-index:1;
+}
+
+a{
+	text-decoration:none;
+	color:#fff;
+	}
+a:hover{
+	color:#FFEEE5;
+	font-size:90%;
+}
+a:active{
+	color:#CDB2A5;
+}
+.formulario{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha os elementos à esquerda */
+    justify-content: flex-start; /* Garante alinhamento vertical ao topo */
+    margin: auto; /* Centraliza o formulário na página */
+    top: 20rem;
+    min-height: 20rem;
+    height: auto;
+    background-color: black;
+    position: relative;
+    color: #f4f4f4;
+    gap: 0.5rem;
+    padding: 1rem; /* Adiciona espaço interno */
+   font-family:sans-serif;
+	 box-shadow: 3px 3px 10px rgba(8, 17, 233, 0.5);
+	animation:sombra-cor 4s infinite ;
+	border-radius:1rem;
+
+}
+form{
+	margin:2rem auto;
+	width:70%;
+	display:flex;
+	flex-direction:column;
+	gap:1rem;
+}
+
+input {
+    width: 100%; /* Garante que os inputs fiquem alinhados e preencham o espaço disponível */
+    box-sizing: border-box; /* Inclui o padding dentro do tamanho total */
+	
+	padding:0.3rem;
+	border:none;
+
+}
+input:hover{
+	background-color:#cccccc;
+}
+
+.info_pessoais{
+	display:flex;
+	flex-direction:row;
+	gap:0.4rem;
+	justify-content:center;
+}
+
+.info_carro{
+	display:flex;
+	flex-direction:row;
+	gap:0.4rem;
+justify-content:center;
+}
+.section_serviços{
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	gap:0.4rem;
+}
+.colunas{
+	display:flex;
+	flex-direction:row;
+	gap:0.5rem;
+	justify-content:center;	
+	align-items:center;
+	
+
+}
+.colunas label{
+	width:100%;
+}
+.colunas input{
+	width:7%;
+}
+
+.opcoes{
+	display:flex;
+	flex-direction:row;
+	display:flex;
+	gap:0.4rem;
+	width:100%;
+
+}
+
+
+@keyframes sombra-cor {
+	0%{
+	box-shadow: 5px 5px 80px rgba(8, 17, 233, 1)
+}
+	50%{
+	box-shadow: 5px 5px 80px rgba(198, 25, 18, 1)
+}
+}
