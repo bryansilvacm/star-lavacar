@@ -1,14 +1,25 @@
+/* Corrigindo os imports das fontes */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Questrial&display=swap');
+
+
 
 *{
 	margin:0;
 	padding:0;
 }
 body{
-	background-color:#272729;
 	height:100%;
+	background-color:#333;
+	
+}
+#background{
+	width:100%;
+	height:100vh;
+	z-index:-2;
+	position:absolute;
+	opacity:10%;
 }
 hr{ 
 	border: none; /* Remove bordas padrão */
@@ -67,14 +78,14 @@ a:active{
     align-items: flex-start; /* Alinha os elementos à esquerda */
     justify-content: flex-start; /* Garante alinhamento vertical ao topo */
     margin: auto; /* Centraliza o formulário na página */
-    top: 20rem;
+    top: 18rem;
     min-height: 20rem;
     height: auto;
     background-color: black;
     position: relative;
     color: #f4f4f4;
     gap: 0.5rem;
-    padding: 1rem; /* Adiciona espaço interno */
+    padding: 2rem; /* Adiciona espaço interno */
    font-family:sans-serif;
 	 box-shadow: 3px 3px 10px rgba(8, 17, 233, 0.5);
 	animation:sombra-cor 4s infinite ;
@@ -126,14 +137,17 @@ justify-content:center;
 	gap:0.5rem;
 	justify-content:center;	
 	align-items:center;
-	
+	width:100%;
 
 }
-.colunas label{
-	width:100%;
-}
-.colunas input{
+.opcoes input {
 	width:7%;
+}
+
+.colunas label {
+        display: flex;
+        align-items: center;
+	width:100%;
 }
 
 .opcoes{
@@ -143,6 +157,16 @@ justify-content:center;
 	gap:0.4rem;
 	width:100%;
 
+}
+
+button{
+	width:30%;
+	margin:auto;
+	font-size:1.1rem;
+	background-color: rgba(198, 25, 18, 1);
+	color:#F4F4F4;
+	border:none;
+	padding:0.3rem;
 }
 
 
