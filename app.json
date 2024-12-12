@@ -1,0 +1,17 @@
+{
+
+	"agendamentos":[
+
+	{	
+		nome: "",
+		placa:"",
+		Telefone:"" ,
+		Modelo:"" ,
+		serviço:[""],
+		dia: "",
+		hora:""
+	},
+
+	
+]
+}
